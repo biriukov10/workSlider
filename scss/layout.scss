@@ -1,17 +1,19 @@
-//variables 
-$container: 1170px;
+//variables
+$container: 1280px;
 $gap: 15px;
 $col: 12;
 $colWidth: 100% / $col;
-
-$primaryColor: pink;
-$secondaryColor: #4e4e4e;
-
-$btnBorderColor: $primaryColor;
-
+$primeryFontSize: 1.125rem;
+$secondaryFontSize: 5.375rem;
+$lineHeightPrim: 20px;
+$lineHeightSec: 90px;
 
 * {
   box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
 }
 
 .container {
@@ -30,19 +32,12 @@ $btnBorderColor: $primaryColor;
   margin-top: 1rem;
 }
 
-[class^='ba-col-'] {
+[class^="ba-col-"] {
   padding: 0 15px;
 }
-
 
 @for $i from 1 through $col {
   .ba-col-#{$i} {
     width: $colWidth * $i;
   }
-}
-
-//mixins
-@mixin buttonHover {
-  background-color: pink;
-  border-color: darken($btnBorderColor, 15%);
 }

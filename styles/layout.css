@@ -1,8 +1,12 @@
 * {
   box-sizing: border-box; }
 
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px; }
+
 .container {
-  max-width: 1170px;
+  max-width: 1280px;
   width: 100%;
   padding: 0 15px;
   margin: 0 auto; }
@@ -16,7 +20,7 @@
 .ba-row + .ba-row {
   margin-top: 1rem; }
 
-[class^='ba-col-'] {
+[class^="ba-col-"] {
   padding: 0 15px; }
 
 .ba-col-1 {

@@ -1,8 +1,12 @@
 * {
   box-sizing: border-box; }
 
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px; }
+
 .container {
-  max-width: 1170px;
+  max-width: 1280px;
   width: 100%;
   padding: 0 15px;
   margin: 0 auto; }
@@ -16,7 +20,7 @@
 .ba-row + .ba-row {
   margin-top: 1rem; }
 
-[class^='ba-col-'] {
+[class^="ba-col-"] {
   padding: 0 15px; }
 
 .ba-col-1 {
@@ -55,18 +59,32 @@
 .ba-col-12 {
   width: 100%; }
 
-.box {
-  background-color: #ccc;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 15px;
-  height: 100%; }
-
-.btn {
-  background: pink;
-  min-width: 100px;
-  padding: 0 .1em; }
-  .btn:hover {
-    background-color: pink;
-    border-color: #ff748c; }
+.ba-header .ba-desc {
+  padding: 56px 120px 68px;
+  text-align: center;
+  text-transform: uppercase; }
+  .ba-header .ba-desc__f-work {
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 2px; }
+    .ba-header .ba-desc__f-work::after {
+      content: "\271A";
+      position: relative;
+      left: 250px;
+      bottom: 20px;
+      cursor: pointer;
+      color: #e98457;
+      font-size: 30px; }
+  .ba-header .ba-desc__title {
+    font-size: 5.375rem;
+    font-weight: 600;
+    line-height: 90px;
+    margin-top: 20px; }
+    .ba-header .ba-desc__title::before {
+      content: url(../images/gulpfile.js.png);
+      position: relative;
+      cursor: pointer;
+      color: #e98457;
+      font-size: 30px;
+      top: 120px;
+      right: 80px; }

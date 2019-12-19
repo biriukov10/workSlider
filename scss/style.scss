@@ -1,18 +1,36 @@
-
-.box {
-  background-color: #ccc;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 15px;
-  height: 100%;
-}
-.btn {
-  background: $primaryColor;
-  min-width: 100px;
-  padding: 0 .1em;
-
-  &:hover {
-    @include buttonHover;
+.ba-header {
+  .ba-desc {
+    padding: 56px 120px 68px;
+    text-align: center;
+    text-transform: uppercase;
+    &__f-work {
+      font-weight: 600;
+      line-height: $lineHeightPrim;
+      letter-spacing: 2px;
+      &::after {
+        content: "\271A";
+        position: relative;
+        left: 250px;
+        bottom: 20px;
+        cursor: pointer;
+        color: #e98457;
+        font-size: 30px;
+      }
+    }
+    &__title {
+      font-size: $secondaryFontSize;
+      font-weight: 600;
+      line-height: $lineHeightSec;
+      margin-top: 20px;
+      &::before {
+        content: url(../images/gulpfile.js.png);
+        position: relative;
+        cursor: pointer;
+        color: #e98457;
+        font-size: 30px;
+        top: 120px;
+        right: 80px;
+      }
+    }
   }
 }
