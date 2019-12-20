@@ -1,0 +1,32 @@
+.slick-next::before {
+  content: url(../images/next.png);
+}
+.slick-prev::before {
+  content: url(../images/prev.png);
+}
+.ba-slider {
+  max-width: 90%;
+  margin: 0 auto;
+}
+.slick-arrow {
+  z-index: 9;
+}
+.slick-next {
+  top: 40%;
+  right: -50px;
+}
+.slick-prev {
+  top: 40%;
+  left: -70px;
+}
+img {
+  position: relative;
+  overflow: hidden;
+}
+.hidden {
+  width: 70%;
+  text-align: center;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+}
