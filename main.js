@@ -1,8 +1,11 @@
 $(document).ready(function () {
   $('.ba-slider').slick({
-    arrows: true,
     slidesToShow: 3,
+    arrows: true,
     centerMode: true,
-    centerPadding: '60px',
+    centerPadding: '75px',
+  });
+  $('a').on('click', function (e) {
+    e.preventDefault();
   });
 });
